@@ -1,0 +1,87 @@
+
+//row one//
+.first{
+    background-color: rgba(233, 227, 227, 0.829);
+    margin-top: 20px;
+    @media(min-width: 800px){
+        margin-top: 40px;
+    }
+}
+.first__one{
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.one, .two{
+    position: relative;
+    justify-items: center;
+    justify-content:center;
+    align-items: center;
+    width: 80%;
+    height: 20vh;
+    border-bottom: 2px solid $colorbackground; 
+    border-right: 2px solid $colorbackground; 
+    box-shadow: 10px 10px 12px $colorbackground;
+    margin-bottom: 20px;
+    overflow: hidden;
+    @media(min-width: 800px){
+        height: 50vh;
+    }
+    .one__jeans{
+        position: absolute;
+        top: -25px;
+        width: 100%;
+        height: 200%;
+        @media(min-width: 800px){
+            height: 130%;
+        }
+    }
+    .one__topic{
+        position: absolute;
+        text-align: center;
+        font-size: 0;
+    }
+}
+.one:hover{
+    background-color: $colorHighlights;
+    .one__jeans{
+        transition: 1s;
+        opacity:.6;
+    }
+    .one__topic{                //applies to 2 tags with this class//
+        color: $colorTexts;
+        font-size: 60px;
+        line-height: 20vh;
+        letter-spacing: 5px;
+        padding: 0 10px;
+        transition: 2s;
+        opacity: .7;
+    }
+}
+
+//row one description//
+.two{
+    text-align: center;
+    font-family: cursive;
+    .two__text{
+        margin: 0 10px;
+    }
+}
+//row two//
+.second{
+    background-color: rgba(248, 246, 246, 0.829);
+    margin-top: 20px;
+}
+.second__one{
+    justify-content: space-around;
+    .one__shoes{
+        position: absolute;
+        top: -42px;
+        width: 100%;
+        height: 143%;
+        @media(min-width: 800px){
+            top: -65px;
+            height: 140%;
+        }
+    }
+}

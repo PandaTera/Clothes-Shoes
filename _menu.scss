@@ -1,0 +1,91 @@
+//burger and menu//
+.menu__burger{
+    position: absolute;
+    top: 17px;
+    left: 22vw;
+    line-height: 100px;
+    @media(min-width: 800px){
+        top: 45px;
+        left: 24vw;
+    }
+
+.fas{
+    position: absolute;
+    top: 5px;
+    left: 65vw;
+    font-size: 30px;
+    color: $colorTexts;
+}
+.fa-times:hover{
+    transform: rotate(180deg);
+    transition: .2s linear; 
+}
+.burger__active{
+    display: none;
+}
+.menu__bar{
+    position: absolute;
+    left: -100vw;
+    height: 40px;
+    width: 70vw;
+    background-color: $colorHighlights;
+    border-radius: 15px;
+    transition: .4s linear;
+    &--on{
+        left:-10vw;
+        .navbar{
+            justify-content: center;
+            align-items: center;
+            margin-left: -10px;
+            .navbar-items{
+                text-align: center;
+                .navbar-item{
+                    line-height: 38px;
+                    list-style: none;
+                    @media(min-width: 360px){
+                        margin-right: 5px;
+                    }
+                    @media(min-width: 760px){
+                        margin-right: 35px;
+                    }
+                    @media(min-width: 1024px){
+                        margin-right: 55px;
+                    }
+                    @media(min-width: 1024px){
+                            font-size: xx-large;
+                        }
+                    .sub-navbar-items{
+                        list-style: none;
+                        margin: 10px;
+                        display:none;
+                        .sub-navbar-item{
+                            width: 80px;
+                            margin: 0 -10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: $colorHighlights;
+                            .sub-navbar-item__link{
+                                color:$colorTexts;
+                                &:hover{
+                                    color:blue;
+                                    font-weight: 800;
+                                }
+                            }    &:hover{
+                                background-color: $colorTexts; 
+                                }
+                                @media(min-width: 1024px){
+                                    font-size: xx-large;
+                                    width: 180px;
+                                    margin-top: 5px;
+                                }
+                        }
+                    }
+            }.navbar-item:hover > .sub-navbar-items{
+                display: block;
+            }
+        }
+        }
+    }
+    }
+}

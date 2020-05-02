@@ -1,0 +1,35 @@
+//footer//
+.bottom{
+    background-color: rgba(12, 11, 11, 0.829);
+    margin: 20px 0 0 0;
+    padding: 0 50px;
+    width: 100%;
+    overflow: hidden;
+    .bottom__footer{
+        height: 10vh;
+        margin: 0 30px;
+        justify-content: space-between;
+        align-content: center;
+        .bottom__images{
+            list-style: none;
+            line-height: 10vh;
+            font-size: 25px;
+            justify-content: center;
+            .bottom__image{
+                margin-right: 10px;
+            }
+        }
+        .bottom__span{
+            display: inline-flex;
+            align-items: center;
+            font-size: 10px;
+            color: whitesmoke;
+            .far{
+                margin-right: 5px;
+            }
+            @media(min-width: 800px){
+                font-size: 15px;
+            }
+        }
+    }
+}

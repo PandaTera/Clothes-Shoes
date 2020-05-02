@@ -1,0 +1,33 @@
+//top images//
+.clothes{
+    position:relative;
+    width: 100%;
+    box-shadow: 0 5px 16px $colorbackground; 
+}
+.heading, .subheading{
+    position: absolute;
+    left: 12vw;
+    font-size: 25px;
+    color: $colorTexts;
+    background: $colorHighlights;
+    opacity: .7;
+}
+.heading{
+    top: 114px;
+    @media(min-width: 568px){
+        top: 240px;
+    }
+    @media(min-width: 800px){
+        top: 450px;
+    }
+}
+.subheading{
+    top: 165px;
+    @media(min-width: 568px){
+        top: 295px;
+    }
+    @media(min-width: 800px){
+        top: 505px;
+    }
+}
+

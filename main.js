@@ -38,13 +38,23 @@ const burger = document.querySelector(".menu__burger");
 const burger_on = document.querySelector(".fa-bars");
 const burger_off = document.querySelector(".fa-times");
 const menu_bar = document.querySelector(".menu__bar");
-
+const subNavbar = document.getElementsByClassName(".sub-navbar-item__link");
+const menu = document.querySelector(".menu")
+let change = 0;
 const show_menu = function(){
-// console.log('ok')
+if(change%2 == 0){
+    change++;
 burger_on.classList.toggle("burger__active");
 burger_off.classList.toggle("burger__active");
 menu_bar.classList.toggle("menu__bar--on");
-
+}
+else {
+    change++;
+burger_on.classList.toggle("burger__active");
+burger_off.classList.toggle("burger__active")
+menu_bar.classList.toggle("menu__bar--on");
+}
 }
 
-burger.addEventListener("click", show_menu)
+burger.addEventListener("click", show_menu);
+
